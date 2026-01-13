@@ -102,4 +102,4 @@ Created by Techric — a Cloud & DevSecOps Engineer dedicated to building secure
 
 This repository documents real-world projects from my home lab and professional experience, showcasing practical problem-solving, infrastructure mastery, and a commitment to continuous learning.
    
-   Apply complete! Resources: 12 added, 0 changed, 0 destroyed.
+ 
