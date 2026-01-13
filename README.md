@@ -74,13 +74,25 @@ Security: [Security Policy](SECURITY.md) • [Security Checklist](docs/security-
 ---
 
 ### 7. Repo Structure
-/infra -> Terraform and infrastructure definitions
-/docs -> Architecture diagrams and screenshots
-/services -> Application services (ingestion, analysis, API)
-/schemas -> Event and data schemas
-/README.md -> Project overview
-/SECURITY.md -> Security policy
-/CONTRIBUTING.md -> Contribution rules (sole maintainer)
+fsis-eligibility-control-tower/
+├── README.md
+├── SECURITY.md
+├── CONTRIBUTING.md
+├── docs/
+│   ├── architecture.md
+│   ├── roadmap.md
+│   └── screenshots/
+├── infra/
+│   ├── terraform/
+│   └── ansible/
+├── services/
+│   ├── ingestor/
+│   ├── impact-analyzer/
+│   ├── notifier/
+│   └── api/
+└── schemas/
+    ├── events/
+    └── models/
 
 ---
 ### About Me
