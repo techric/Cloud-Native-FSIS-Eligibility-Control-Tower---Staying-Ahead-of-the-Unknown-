@@ -1,75 +1,97 @@
-# Recruiter-Friendly-README-Template
-##Hands-On Projects Worthy of Recruiter Review
-# [Project Title Here]
+## Hands-On Projects Worthy of Recruiter Review
 
-> One-liner about what this AWS project does (example: "Observability on AWS EKS with Prometheus, Loki, and Grafana").
-
----
-
-## 1. What This Project Shows
-- [ ] Problem: (short statement — e.g., "Enterprises lack unified observability across workloads.")
-- [ ] Solution: (short statement — e.g., "Deployed PLG stack on AWS EKS using Terraform.")
-- [ ] Impact: (short statement — e.g., "Improved incident visibility, reduced MTTR by 40%.")
+### FSIS Eligibility Control Tower  
+Cloud-native control tower that monitors FSIS establishment eligibility data, detects status changes, computes downstream operational impact, and provides role-based alerts and dashboards for compliance-aware operations.
 
 ---
 
-## 2. How to Use This Template
-<ol type="a">
-<li> **Deploy once** (small/dev resources) → validate it works.
-<li> **Take 2–3 screenshots** (AWS Console, Grafana, AWS Athena/queries, AWS QuickSight charts) and save them in `docs/screenshots/`.
-<li> **Add an architecture diagram** to `docs/architecture.png`.d. **Destroy the infra** to avoid charges (`terraform destroy`).
-<li> Fill in the sections below (What This Shows, Architecture, Screenshots, Tech Used).
-<Li> Link your security docs: [Policy](SECURITY.md) • [Checklist](docs/security-checklist.md).
-</ol>
+### 1. What This Project Shows
+
+**Problem:**  
+Meat export and cold-chain operations lack near-real-time visibility into FSIS establishment eligibility changes, creating downstream compliance risk across inventory, facilities, and shipments.
+
+**Solution:**  
+Built an event-driven cloud control tower that ingests FSIS eligibility data, detects eligibility drift, computes operational blast radius, enforces control gates, and surfaces shared situational awareness across teams.
+
+**Impact:**  
+Improves compliance awareness, prevents invalid downstream actions, and enables faster, coordinated response across quality, operations, and management roles.
 
 ---
 
-## 3. Architecture
-High-level diagram of how services fit together.
-NOTE: Replace this image with your diagram.
-![Architecture](docs/architecture.png)
+### 2. How to Use This Template
+
+- Deploy once using small, development-sized resources.  
+- Capture 2–3 screenshots (AWS Console, dashboards, data views) and save them in `docs/screenshots/`.  
+- Add a high-level architecture diagram to `docs/architecture.png`.  
+- Destroy infrastructure after validation to avoid ongoing cloud charges.  
+- Fill in the sections below (Architecture, Screenshots, Tech Used).  
+- Review linked security documentation.
 
 ---
 
-## 4. Screenshots (Proof of Work)
-Once the project is deployed, add 2-3 proof screenshots when you deploy it once: 
+### 3. Architecture
 
-a. **AWS Console**  
-   _Example: EKS cluster deployed_  
-   ![EKS Screenshot](docs/screenshots/eks-cluster.png)
+High-level architecture showing:
 
-b. **Grafana Dashboard / AWS Athena Query / AWS QuickSight Chart**  
-   _Example: Cost optimization dashboard_  
-   ![Dashboard Screenshot](docs/screenshots/dashboard.png)
+- Scheduled ingestion of FSIS eligibility data  
+- Snapshot-based change detection  
+- Event-driven impact analysis  
+- Enforcement of operational control gates  
+- Role-based visibility through dashboards and alerts  
+- Audit logging and observability  
 
-c. **Command Line Output**  
-   _Example: Terraform apply success_  
-   
----
-
-## 5. Tech Used
-Example: AWS Services (EC2, S3, IAM, etc.), Terraform, GitHub Actions, Python  
+*(Replace with your architecture diagram in `docs/architecture.png`.)*
 
 ---
 
-## 6. Cost Note
-This project is created on-demand and destroyed after screenshots are taken to avoid AWS charges.  
+### 4. Screenshots (Proof of Work)
+
+Add 2–3 screenshots after a single deployment.
+
+**a. AWS Console**  
+Example: Serverless services and data stores provisioned  
+*(Screenshot placeholder)*
+
+**b. Dashboard View**  
+Example: Eligibility changes, impacted entities, and open compliance events  
+*(Screenshot placeholder)*
+
+**c. Data or Event View**  
+Example: Eligibility change detected and downstream impact recorded  
+*(Screenshot placeholder)*
+
+---
+
+### 5. Tech Used
+
+- **AWS Services:** Serverless compute, managed NoSQL storage, event routing, notifications  
+- **Infrastructure as Code:** Terraform  
+- **Automation:** Ansible (demo and environment resets)  
+- **Observability:** Prometheus, Loki, Grafana (self-hosted for demos)  
+- **Language:** Python  
+
+---
+
+### 6. Cost Note
+
+This project is designed to be deployed on-demand and destroyed after validation to minimize cloud costs. No always-on infrastructure is required.
 
 Security: [Security Policy](SECURITY.md) • [Security Checklist](docs/security-checklist.md)
 
 ---
 
-## 7. Repo Structure
-/infra       -> Terraform code  
-/docs        -> Architecture diagrams & screenshots  
-/scripts     -> Helper scripts  
-/README.md   -> Project description  
-/SECURITY.md -> Security policy  
-/CONTRIBUTING.md -> Contribution rules (you as a sole maintainer)
+### 7. Repo Structure
+/infra -> Terraform and infrastructure definitions
+/docs -> Architecture diagrams and screenshots
+/services -> Application services (ingestion, analysis, API)
+/schemas -> Event and data schemas
+/README.md -> Project overview
+/SECURITY.md -> Security policy
+/CONTRIBUTING.md -> Contribution rules (sole maintainer)
 
 ---
+### About Me
 
-About Me
 Created by Techric — a Cloud & DevSecOps Engineer dedicated to building secure, automated, and observable systems on AWS and Linux. Each project reflects my goal of turning technical exploration into clear, reproducible knowledge others can build upon.
 
 This repository documents real-world projects from my home lab and professional experience, showcasing practical problem-solving, infrastructure mastery, and a commitment to continuous learning.
