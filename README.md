@@ -1,6 +1,6 @@
 ## Hands-On Projects Worthy of Recruiter Review
 
-### FSIS Eligibility Control Tower  
+### Food Safety and Inspection Service (FSIS) Eligibility Control Tower  
 Cloud-native control tower that monitors FSIS establishment eligibility data, detects status changes, computes downstream operational impact, and provides role-based alerts and dashboards for compliance-aware operations.
 
 ---
@@ -8,24 +8,17 @@ Cloud-native control tower that monitors FSIS establishment eligibility data, de
 ### 1. What This Project Shows
 
 **Problem:**  
-Meat export and cold-chain operations lack near-real-time visibility into FSIS establishment eligibility changes, creating downstream compliance risk across inventory, facilities, and shipments.
+Food Safety and Inspection Service (FSIS) is a public health agency within the USDA. 
+
+FSIS is responsible for ensuring that meat, poultry, and egg products are safe, wholesome, and correctly labeled. FSIS maintains inspection and eligibility records that determine which establishments are authorized to process products for domestic and export markets.
+
+Meat export and cold-chain operations lack near-real-time visibility into "FSIS establishment" (ie meat producing farms) eligibility changes, creating downstream compliance risk across inventory, facilities, and shipments.
 
 **Solution:**  
 Built an event-driven cloud control tower that ingests FSIS eligibility data, detects eligibility drift, computes operational blast radius, enforces control gates, and surfaces shared situational awareness across teams.
 
 **Impact:**  
-Improves compliance awareness, prevents invalid downstream actions, and enables faster, coordinated response across quality, operations, and management roles.
-
----
-
-### 2. How to Use This Template
-
-- Deploy once using small, development-sized resources.  
-- Capture 2–3 screenshots (AWS Console, dashboards, data views) and save them in `docs/screenshots/`.  
-- Add a high-level architecture diagram to `docs/architecture.png`.  
-- Destroy infrastructure after validation to avoid ongoing cloud charges.  
-- Fill in the sections below (Architecture, Screenshots, Tech Used).  
-- Review linked security documentation.
+Improves compliance awareness for all decision-makers across the supply chain, prevents invalid downstream actions, and enables faster, coordinated responses across quality, operations, and management roles.
 
 ---
 
