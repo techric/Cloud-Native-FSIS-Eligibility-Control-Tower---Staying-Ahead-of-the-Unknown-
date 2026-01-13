@@ -74,10 +74,9 @@ Security: [Security Policy](SECURITY.md) • [Security Checklist](docs/security-
 ---
 
 ### 7. Repo Structure
+
 fsis-eligibility-control-tower/
 ├── README.md
-├── SECURITY.md
-├── CONTRIBUTING.md
 ├── docs/
 │   ├── architecture.md
 │   ├── roadmap.md
@@ -93,6 +92,7 @@ fsis-eligibility-control-tower/
 └── schemas/
     ├── events/
     └── models/
+
 
 ---
 ### About Me
